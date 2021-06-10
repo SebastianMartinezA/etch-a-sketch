@@ -11,8 +11,8 @@ html{
 
 .grid-container{
     display: grid;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     margin: 2rem auto;
     border: 2px solid black;
     grid-template-columns: repeat(var(--grid-cols), 1fr);
@@ -22,7 +22,7 @@ html{
 h1{
     padding: 3rem;
     color: black;
-    font-size: 7rem;
+    font-size: 4rem;
 }
 
 .center-div{
