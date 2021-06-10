@@ -20,7 +20,6 @@ html{
 }
 
 h1{
-    padding: 3rem;
     color: black;
     font-size: 4rem;
 }
@@ -39,7 +38,7 @@ button{
     font-size: 2rem;
 }
 
-.button:hover{
+button:hover{
     background-color: lightgray;
 }
 
@@ -49,10 +48,6 @@ body{
 
 .grid-item{
     border: 1px solid black;
-}
-
-.hoverGrid{
-    background-color: red !important;
 }
 
 @media (max-device-width: 501px){
