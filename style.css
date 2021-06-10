@@ -1,18 +1,68 @@
-#grid-container{
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+:root{
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+html{
+    font-family: "Open Sans", sans-serif;
+}
+
+.grid-container{
     display: grid;
-    grid-gap: 0;
+    max-width: 2000px;
+    max-height: 2000px;
+    width: 2000px;
+    height: 2000px;
+    margin: 2rem auto;
+    border: 2px solid black;
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
 }
 
-.row{
-    border: 1px solid green;
-    height: 1em;
-    line-height: 1em;
+h1{
+    padding: 3rem;
+    color: black;
+    font-size: 12rem;
 }
 
-.col{
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    box-sizing: border-box;
-    border: 1px solid red;
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 4rem;
+}
+
+.button:hover{
+    background-color: lightgray;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.grid-item{
+    border: 1px solid black;
+}
+
+.hoverGrid{
+    background-color: red !important;
+}
+
+@media (max-device-width: 501px){
+    h1{
+        font-size: 8rem;
+    }
+    .grid-container{
+        width: 700px;
+        height: 700px;
+    }
 }
